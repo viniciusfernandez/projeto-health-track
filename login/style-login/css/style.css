@@ -1,0 +1,32 @@
+body {
+  background-color: #000;
+  color: #CFD2FF !important;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+.form-control {
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 2px solid #ED145B;
+  border-radius: 0;
+  -webkit-transition: 0.3s border-bottom-color ease;
+  transition: 0.3s border-bottom-color ease;
+  padding: 0px 5px;
+  background: transparent;
+  color: #CFD2FF !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

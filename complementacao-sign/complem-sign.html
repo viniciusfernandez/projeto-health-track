@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="../complementacao-sign/style-comple-sign/css/style.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../style.js">
+    <title>Complemente seu cadastro.:</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+      <div class="col-md-6 ">
+      <div class="card">
+      <header class="card-header">
+        <h2 class="card-title mt-2 display-3 text-primary "><a href="../index/index.html"><i class="fa fa-heartbeat text-primary " aria-hidden="true"></i></a>Health Track</h2>
+      </header>
+      <article class="card-body">
+        <form action="./dashboard.html" method="GET" autocomplete="off" novalidate="novalidate">
+            <div class="step py-3 show" id="info"  step="2">
+                <div class="form-group">
+                    <label  class="text-primary">Altura (cm)</label>
+                    <input type="text" required="" name="height" class="form-control cm" placeholder="Informe sua altura (cm)" data-rule-number="true" max="300" min="50">
+                </div>
+
+                <div class="form-group">
+                    <label class="text-primary">Peso (kg)</label>
+                    <input type="text" required="" name="weight" class="form-control kg" placeholder="Informe seu peso (kg)" data-rule-number="true" max="900" min="10">
+                </div>
+
+                <div class="form-group">
+                    <label class="text-primary">Gênero</label>
+                    <select name="gender" required="" class="form-control select2-hidden-accessible" data-select2-id="select2-data-1-laz9" tabindex="-1" aria-hidden="true">
+                        <option value="" selected="" disabled="" data-select2-id="select2-data-3-xh6l">Selecione uma opção</option>
+                        <option value="0">Feminino</option>
+                        <option value="1">Masculino</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-yzna" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-gender-c8-container"><span class="select2-selection__rendered" id="select2-gender-c8-container" role="textbox" aria-readonly="true"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="text-primary">Data de nascimento</label>
+                    <input type="date" required="" name="birthdate" class="form-control" max="2020-06-10">
+                </div>
+                <div class="form-group">
+                    <a href="../dashboard/dash-page-initial/dash_page_initial.html">
+                        <button type="button" class="btn btn-primary btn-block">Pronto!</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+      </article>
+    </div>
+      </div> 
+      
+      </div> 
+      
+      
+      </div> 
+
+      
+      <br><br>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../Trabalho/style.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

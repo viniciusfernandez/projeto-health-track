@@ -1,0 +1,160 @@
+body{
+    background-color: #161616;
+};
+.navbar{
+    background-color: black;
+   
+};
+.wrapper {
+    margin-top: 3.5rem;
+    .sideMenu{
+        background-color: black;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin:3.5em auto auto;
+        width: 200px;
+        transition: all ease;
+        transform: translateX(-100%);
+        z-index: 2000;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0em;
+        transition: all ease;
+    }
+    &.active{
+        .sideMenu{
+            transform: translateX(0);
+        }
+    }
+};
+@media(min-width:992px) {
+    .wrapper {
+        .sideMenu {
+            transform: translateX(0);
+        }
+        .content{
+            margin-left:200px;
+        }
+        &.active{
+            .sideMenu{
+                width: 80px;
+                .nav-link{
+                    text-align: center;
+                    .fa{
+                        margin-right: 0;
+                    }
+                    .text{
+                        display: none;
+                    }
+                }
+            }
+            .content{
+                margin-left: 80px;
+            }
+        }
+    }
+}
+.nav-link {
+    display: block;
+    white-space: nowrap;
+    .fa {
+        color: #ED145B;
+        margin-right: 4px;
+        font-size: 25px;
+        vertical-align: middle;
+        height: 32px;
+        width: 32px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        font-size: 14px;
+        color: #6c757d;
+    }
+    &:hover,
+    &:active{
+        background-color: #ED145B;
+        .fa{
+            color: #6c757d;
+        }
+        .text{
+            color:black
+        }
+    }
+}
+
+.rounded-circle{
+    width: 12em;
+    height: 12em;
+};
+
+
+.btn-update-photo {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ED145B;
+    border-color: #6c757d;
+    border-radius: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box-photo{
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    box-shadow: 0px 2px 7px -5px rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: 16em;
+    background-position: bottom;
+    background-image: url(../../../../img/newyork.jpg);
+    margin: 0 auto;
+    margin-top: 1em;
+    position: relative;
+}
+
+  
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+};
+.table th  {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #ED145B;
+};
+.table td{
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #ED145B;
+    };
+
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid ;
+}
+.box--date{
+    padding-left: 12em;
+}
+.btn--action{
+    border-top:none;
+}
+.title-food{
+    height: 0px;
+        margin-top: 2em;
+        padding-bottom: 3em;
+}
+td {
+    color: #6c757d;
+}
